@@ -1,5 +1,6 @@
 
 import './App.css';
+import Gallery from './components/Gallery';
 
 
 function Header() {
@@ -35,6 +36,7 @@ function App() {
       <Header />
       <MainContent />
       <Footer />
+      <Gallery />
     </div>
   );
 }
