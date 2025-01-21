@@ -1,43 +1,26 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
 import Gallery from './components/Gallery';
-
-
-function Header() {
-  return (
-    <header className="header">
-      <h1>Welcome to My App</h1>
-    </header>
-  );
-}
-
-
-function MainContent() {
-  return (
-    <main className="main-content">
-      <p>This is the main content of the app.</p>
-    </main>
-  );
-}
-
-
-function Footer() {
-  return (
-    <footer className="footer">
-      <p>&copy; 2025 My App. All rights reserved.</p>
-    </footer>
-  );
-}
+import Navbar from './components/navbar';
 
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <MainContent />
-      <Footer />
-      <Gallery />
-    </div>
+    <BrowserRouter>
+     <div className='app'>
+     <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+     </div>
+    </BrowserRouter>
   );
 }
 
