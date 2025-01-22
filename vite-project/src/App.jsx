@@ -1,27 +1,23 @@
+import React from 'react';
+import Login from '../src/pages/Login';
+import Signup from '../src/pages/Signup';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import "./App.css"
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import Gallery from './components/Gallery';
-import Navbar from './components/navbar';
-
-
-function App() {
+const App = () => {
   return (
-    <BrowserRouter>
-     <div className='app'>
-     <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-     </div>
-    </BrowserRouter>
+    <Router>
+      <div className="app-container">
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
-}
+};
+
 
 export default App;
