@@ -8,6 +8,8 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Gallery from './components/Gallery';
+import UseEffectHook from './hooks/useEffectHook';
+import { UseStateHook } from './hooks/useStateHook';
 
 const App = () => {
   return (
@@ -22,6 +24,8 @@ const App = () => {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/auth" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/usestate" element={<UseStateHook />} />
+            <Route path="/useeffect" element={<UseEffectHook />} />
           </Routes>
         </div>
       </div>

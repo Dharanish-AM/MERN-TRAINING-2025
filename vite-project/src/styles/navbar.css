@@ -4,6 +4,7 @@ nav {
     display: flex;
     justify-content: center;
     margin: 0;
+    position: relative;
 }
 
 ul {
@@ -23,4 +24,18 @@ a {
     font-size: 16px;
     font-weight: bold;
     transition: color 0.3s ease;
+}
+
+.dropdown{
+    position: absolute;
+    background-color: lightblue;
+    padding: 2rem;
+   top: 60px;
+   right: 410px;
+}
+
+.dropdown ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
