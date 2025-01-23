@@ -25,8 +25,11 @@ export default function Navbar() {
                 <li><Link to="/gallery">Gallery</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
                 <li><Link to="/auth">Auth</Link></li>
+                <li style={{
+                    color:"white"
+                }} onMouseEnter={toggleDrop} onMouseLeave={toggleDrop}>Hooks</li>
             </ul>
-            <span onMouseEnter={toggleDrop} onMouseLeave={toggleDrop}>Hooks</span>
+        
             {dropdown && (
               <div className="dropdown">
               <ul>
