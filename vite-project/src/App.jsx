@@ -8,12 +8,12 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Gallery from './components/Gallery';
-import UseEffectHook from './hooks/useEffectHook';
-import { UseStateHook } from './hooks/useStateHook';
+import UseEffectHook from './hooks/UseEffectHook';
+import { UseStateHook } from './hooks/UseStateHook';
 import UseEffectAPIimage from './hooks/UseAPIImage';
-import UseRef from './hooks/useRef';
-import UseMemo from './hooks/useMemo';
-import UseCallback from './hooks/useCallback';
+import UseRef from './hooks/UseRef';
+import UseMemo from './hooks/UseMemo';
+import UseCallback from './hooks/UseCallback';
 
 const App = () => {
   return (
