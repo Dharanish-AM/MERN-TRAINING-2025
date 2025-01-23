@@ -10,6 +10,10 @@ import Contact from './components/Contact';
 import Gallery from './components/Gallery';
 import UseEffectHook from './hooks/useEffectHook';
 import { UseStateHook } from './hooks/useStateHook';
+import UseEffectAPIimage from './hooks/UseAPIImage';
+import UseRef from './hooks/useRef';
+import UseMemo from './hooks/useMemo';
+import UseCallback from './hooks/useCallback';
 
 const App = () => {
   return (
@@ -26,6 +30,10 @@ const App = () => {
             <Route path="/signup" element={<Signup />} />
             <Route path="/usestate" element={<UseStateHook />} />
             <Route path="/useeffect" element={<UseEffectHook />} />
+            <Route path="/useeffectimg" element={<UseEffectAPIimage />} />
+            <Route path="/useRef" element={<UseRef />} />
+            <Route path="/useMemo" element={<UseMemo />} />
+            <Route path="/useCallBack" element={<UseCallback />} />
           </Routes>
         </div>
       </div>
