@@ -8,7 +8,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Gallery from './components/Gallery';
-import UseEffectHook from './hooks/UseEffectHook';
+import UseEff from './hooks/UseEff';
 import { UseStateHook } from './hooks/UseStateHook';
 import UseEffectAPIimage from './hooks/UseAPIImage';
 import UseRef from './hooks/UseRef';
@@ -29,7 +29,7 @@ const App = () => {
             <Route path="/auth" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/usestate" element={<UseStateHook />} />
-            <Route path="/useeffect" element={<UseEffectHook />} />
+            <Route path="/useeffect" element={<UseEff />} />
             <Route path="/useeffectimg" element={<UseEffectAPIimage />} />
             <Route path="/useRef" element={<UseRef />} />
             <Route path="/useMemo" element={<UseMemo />} />
