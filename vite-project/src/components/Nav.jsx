@@ -33,12 +33,12 @@ export default function Navbar() {
             {dropdown && (
               <div className="dropdown">
               <ul>
-                    <li><Link to="/usestate" target='_blank'>useState</Link></li>
-                    <li ><Link to="/useeffect" target='_blank'>useEffect</Link></li>
-                    <li ><Link to="/useeffectimg" target='_blank'>useEffectAPI</Link></li>
-                    <li ><Link to="/useRef" target='_blank'>useRef</Link></li>
-                    <li ><Link to="/useMemo" target='_blank'>useMemo</Link></li>
-                    <li ><Link to="/useCallback" target='_blank'>useCallback</Link></li>
+                    <li><Link to="/usestate" >useState</Link></li>
+                    <li ><Link to="/useeffect" >useEffect</Link></li>
+                    <li ><Link to="/useeffectimg" >useEffectAPI</Link></li>
+                    <li ><Link to="/useRef" >useRef</Link></li>
+                    <li ><Link to="/useMemo">useMemo</Link></li>
+                    <li ><Link to="/useCallback" >useCallback</Link></li>
                 </ul>
               </div>
             )}
