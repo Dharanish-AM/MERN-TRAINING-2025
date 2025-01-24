@@ -15,6 +15,7 @@ import Ref from './hooks/Ref';
 import Memo from './hooks/Memo';
 import Callback from './hooks/Callback';
 import ReactLifecycleMethods from './components/ReactLifeCycleMethods';
+import UseContext from './hooks/UseContext';
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
             <Route path="/useMemo" element={<Memo />} />
             <Route path="/useCallBack" element={<Callback />} />
             <Route path='/reactlifecycle' element={<ReactLifecycleMethods />} />
+            <Route path='/usecontext' element={<><Navbar /><UseContext /></>} /> 
           </Routes>
         </div>
       </div>
