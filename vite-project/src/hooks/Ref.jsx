@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const UseRef = () => {
+const Ref = () => {
     var [text, setText] = useState("");
     var prevRender = useRef();
     useEffect(()=>{
@@ -18,4 +18,4 @@ const UseRef = () => {
 
 }
 
-export default UseRef;
+export default Ref;

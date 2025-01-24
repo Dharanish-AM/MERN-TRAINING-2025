@@ -2,7 +2,7 @@ import { useState } from "react";
 import ListItems from "../components/List";
 import { useCallback } from "react";
 
-const UseCallback=()=>{
+const Callback=()=>{
     var[num,setNum]=useState(0);
     var[dark,setDark]=useState(true);
     var styling={
@@ -28,4 +28,4 @@ const UseCallback=()=>{
     );
 
 };
-export default UseCallback;
+export default Callback;

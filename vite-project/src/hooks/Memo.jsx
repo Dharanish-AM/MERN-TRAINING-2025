@@ -6,7 +6,7 @@ const slowFunction = (num) => {
 
 }
 
-const UseMemo = () => {
+const Memo = () => {
     const [num, setNum] = useState(0);
     const [dark, setDark] = useState(false);
     const styling = {
@@ -24,4 +24,4 @@ const UseMemo = () => {
         </div>
     )
 }
-export default UseMemo;
+export default Memo;

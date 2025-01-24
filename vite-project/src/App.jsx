@@ -11,9 +11,9 @@ import Gallery from './components/Gallery';
 import UseEff from './hooks/UseEff';
 import  UseState  from './hooks/UseState';
 import UseEffectAPIimage from './hooks/UseAPIImage';
-import UseRef from './hooks/UseRef';
-import UseMemo from './hooks/UseMemo';
-import UseCallback from './hooks/UseCallback';
+import Ref from './hooks/Ref';
+import Memo from './hooks/Memo';
+import Callback from './hooks/Callback';
 
 const App = () => {
   return (
@@ -31,9 +31,9 @@ const App = () => {
             <Route path="/usestate" element={<UseState />} />
             <Route path="/useeffect" element={<UseEff />} />
             <Route path="/useeffectimg" element={<UseEffectAPIimage />} />
-            <Route path="/useRef" element={<UseRef />} />
-            <Route path="/useMemo" element={<UseMemo />} />
-            <Route path="/useCallBack" element={<UseCallback />} />
+            <Route path="/useRef" element={<Ref />} />
+            <Route path="/useMemo" element={<Memo />} />
+            <Route path="/useCallBack" element={<Callback />} />
           </Routes>
         </div>
       </div>
