@@ -9,7 +9,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Gallery from './components/Gallery';
 import UseEff from './hooks/UseEff';
-import { UseStateHook } from './hooks/UseStateHook';
+import  UseStateHook  from './hooks/UseStateHook';
 import UseEffectAPIimage from './hooks/UseAPIImage';
 import UseRef from './hooks/UseRef';
 import UseMemo from './hooks/UseMemo';
