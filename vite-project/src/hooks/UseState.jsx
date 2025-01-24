@@ -1,6 +1,6 @@
 import { useState } from "react";
 
- const UseStateHook = () =>{
+ const UseState = () =>{
     var [num,setNum]=useState()
     return(
         <div>
@@ -13,4 +13,4 @@ import { useState } from "react";
     )
 }
 
-export default UseStateHook
+export default UseState
