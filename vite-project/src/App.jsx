@@ -9,11 +9,12 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Gallery from './components/Gallery';
 import UseEff from './hooks/UseEff';
-import  UseState  from './hooks/UseState';
+import UseState from './hooks/UseState';
 import UseEffectAPIimage from './hooks/UseAPIImage';
 import Ref from './hooks/Ref';
 import Memo from './hooks/Memo';
 import Callback from './hooks/Callback';
+import ReactLifecycleMethods from './components/ReactLifeCycleMethods';
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
             <Route path="/useRef" element={<Ref />} />
             <Route path="/useMemo" element={<Memo />} />
             <Route path="/useCallBack" element={<Callback />} />
+            <Route path='/reactlifecycle' element={<ReactLifecycleMethods />} />
           </Routes>
         </div>
       </div>

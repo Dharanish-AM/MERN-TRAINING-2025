@@ -39,6 +39,7 @@ export default function Navbar() {
                     <li ><Link to="/useRef" >useRef</Link></li>
                     <li ><Link to="/useMemo">useMemo</Link></li>
                     <li ><Link to="/useCallback" >useCallback</Link></li>
+                    <li><Link to="/reactlifecycle" className='link'>Reactlifecycle</Link></li>
                 </ul>
               </div>
             )}
