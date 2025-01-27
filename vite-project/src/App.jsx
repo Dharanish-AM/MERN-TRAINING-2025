@@ -17,6 +17,8 @@ import Callback from './hooks/Callback';
 import ReactLifecycleMethods from './components/ReactLifeCycleMethods';
 import UseContext from './hooks/UseContext';
 import Memoization from '../src/components/Memoization/Memo';
+import UseLocalStorage from './hooks/UseLocalStorage';
+import LazyLoadingWithSuspence from './components/LazyLoadingWithSuspense';
 
 const App = () => {
   return (
@@ -40,6 +42,8 @@ const App = () => {
             <Route path='/reactlifecycle' element={<ReactLifecycleMethods />} />
             <Route path='/usecontext' element={<><Navbar /><UseContext /></>} /> 
             <Route path='/memoization' element={<Memoization />} />
+            <Route path='/uselocalstorage' element={<UseLocalStorage />} />
+            <Route path='/lazy' element={<LazyLoadingWithSuspence />} />
           </Routes>
         </div>
       </div>
