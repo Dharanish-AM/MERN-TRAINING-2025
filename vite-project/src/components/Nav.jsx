@@ -42,7 +42,8 @@ export default function Navbar() {
                     <li><Link to="/reactlifecycle" className='link'>Reactlifecycle</Link></li>
                     <li><Link to="/memoization" className='link'>Memoization</Link></li>
                     <li><Link to="/uselocalstorage" className='link'>useLocalStorage</Link></li>
-                    <li><Link to="/lazy" className='link'>Lazy Loading</Link></li>
+                    <li><Link to="/darkmode" className='link'>Dark Mode Toggle</Link></li>
+
                 </ul>
               </div>
             )}

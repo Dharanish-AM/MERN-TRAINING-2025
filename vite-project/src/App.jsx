@@ -19,6 +19,7 @@ import UseContext from './hooks/UseContext';
 import Memoization from '../src/components/Memoization/Memo';
 import UseLocalStorage from './hooks/UseLocalStorage';
 import LazyLoadingWithSuspence from './components/LazyLoadingWithSuspense';
+import DarkModeToggle from './hooks/CustomHooks/DarkModeToggle';
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
             <Route path='/memoization' element={<Memoization />} />
             <Route path='/uselocalstorage' element={<UseLocalStorage />} />
             <Route path='/lazy' element={<LazyLoadingWithSuspence />} />
+            <Route path='/darkmode' element={<DarkModeToggle />} />
           </Routes>
         </div>
       </div>
