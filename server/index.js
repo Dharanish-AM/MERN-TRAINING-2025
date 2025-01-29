@@ -23,6 +23,27 @@ app.post("/signup", (req, res) => {
     });
 })
 
+
+app.post('/login', async (req, res) => {
+    const { email, password } = req.body;
+  
+    try {
+      const user = await Signup.findOne({ email: email });
+      if (!user) {
+        return res.status(404).send({response:"User not found",loginStatus:false});
+      }
+  
+      if (bcrypt.compare(user.password , password)) {
+        res.status(200).send({response:"Login successful",loginStatus:true});
+      } else {
+        res.status(401).send({response:"Incorrect password",loginStatus:false});
+      }
+    } catch (err) {
+      res.status(500).send("Error during login");
+    }
+  });
+  
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 })
